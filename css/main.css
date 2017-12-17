@@ -145,6 +145,10 @@ a {
 	margin-top: 1rem;
 	width: 100vw;
 	height: 100vh;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .container {
@@ -161,7 +165,7 @@ a {
 
 }
 
-.blurb p{
+.blurb p {
 	margin-top: 1.5rem;
 	font-family: Fugaz One, Arial, sans-serif;
 	font-size: 1.5rem;
@@ -170,20 +174,72 @@ a {
 
 }
 
-.third-page .clan{
+.third-page {
+
+	width: 100vw;
+	height: 100vh;
+
 	display: flex;
+	justify-content: center;
 	align-items: center;
+	text-align: center;
 }
 
-.clan-description{
+.box img {
+	max-width: 14rem;
+}
+
+.box {
+	position: relative;
+}
+
+.tagline {
+	position: absolute;
+    left: 0; top: 0; right: 0; bottom: 0;
+	opacity: 0;
+	transition: .5s ease;
+	background: rgba(17, 17, 17, .7);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.box:hover .tagline {
+	opacity: 1;
+}
+
+.clan-description .clan{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	width: 40%;
 }
 
-.clan h4
+.clan-description p, h4{ 
+	margin: 1rem 2rem;
+	text-align: justify;
+ }
 
+.clan-description h4 {
+	font-size: 3rem;
+	text-align: center;
+}
+
+p.caption{
+	text-align: center;
+	font-style: italic;
+	color: rgba(255,255,255, .7);
+	margin-top:-1.5rem;
+	padding-bottom: 1rem;
+}
+
+.feed {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0 6rem 2rem 6rem;
+}
 
 footer {
 	padding: 1rem;
