@@ -171,6 +171,7 @@ a {
 	font-size: 1.5rem;
 	text-transform: uppercase;
 	text-align: center;
+	color: #970001;
 
 }
 
@@ -232,6 +233,22 @@ p.caption{
 	color: rgba(255,255,255, .7);
 	margin-top:-1.5rem;
 	padding-bottom: 1rem;
+}
+
+.red h4, .red p.caption {
+	color: #CA0002;
+}
+
+.blue h4, .blue p.caption {
+	color: #0483FF;
+}
+
+.yellow h4, .yellow p.caption {
+	color: #FFCD00;
+}
+
+.green h4, .green p.caption {
+	color: #1BC00B;
 }
 
 .feed {
