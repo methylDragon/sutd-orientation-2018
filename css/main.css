@@ -115,9 +115,18 @@ a {
 	align-items: center;
 }
 
-.header h1 {
+.header a {
+	font-family: Fugaz One, Arial, sans-serif;
+	color: #FFFFFF;
+	margin: 0;
+
 	font-size: 6rem;
 	transform: rotate(-2deg);
+
+}
+
+.header a:hover {
+	cursor: default;
 }
 
 
@@ -160,6 +169,20 @@ a {
 	text-align: center;
 
 }
+
+.third-page .clan{
+	display: flex;
+	align-items: center;
+}
+
+.clan-description{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 40%;
+}
+
+.clan h4
 
 
 footer {
