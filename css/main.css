@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Fugaz+One|Montserrat:400,600');
 
 html, body{
+
 	font-size: 16px;
 
 	margin: 0;
@@ -12,6 +13,7 @@ html, body{
 h1, h4 {
 	font-family: Fugaz One, Arial, sans-serif;
 	color: #FFFFFF;
+	margin: 0;
 }
 
 .logo img {
@@ -22,6 +24,7 @@ h1, h4 {
 p, a {
 	font-family: Montserrat, Open Sans, Helvetica, sans-serif;
 	color: #FFFFFF;
+	margin: 0;
 
 }
 
@@ -37,7 +40,7 @@ p, a {
   	-moz-transition: -moz-transform 1s cubic-bezier(0.86, 0, 0.07, 1);
   	transition: transform 1s cubic-bezier(0.86, 0, 0.07, 1);
 
-	padding: .5rem;
+	padding: 1rem;
 
 	display: flex;
 	justify-content: space-between;
@@ -105,18 +108,63 @@ a {
 	align-items: center;
 }
 
+.header {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
 .header h1 {
-	font-size: 4rem;
+	font-size: 6rem;
+	transform: rotate(-2deg);
+}
+
+
+.subtitle p {
+	text-align: center;
+	padding-bottom: .3rem;
+}
+
+.countdown p{
+	padding: 1rem;
+	font-size: 2rem;
+	color: #1BE215;
 }
 
 .second-page {
+	margin-top: 1rem;
 	width: 100vw;
 	height: 100vh;
 }
 
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.description p{
+	margin: 1rem;
+	text-align: center;
+	font-style: italic;
+	line-height: 2rem;
+
+}
+
+.blurb p{
+	margin-top: 1.5rem;
+	font-family: Fugaz One, Arial, sans-serif;
+	font-size: 1.5rem;
+	text-transform: uppercase;
+	text-align: center;
+
+}
+
+
 footer {
 	padding: 1rem;
 	font-size: .8rem;
-	color: #FFFFFF;
+	color: rgb(142,142,147);
 	text-align: center;
 }
