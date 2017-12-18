@@ -284,7 +284,9 @@ p.caption{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding: 0 6rem 2rem 6rem;
+	width: 100%;
+	margin: 0;
+	padding: 0;
 }
 
 footer {
