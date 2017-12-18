@@ -34,6 +34,7 @@ p, a {
 	right: 0px;
 	top: 0px;
 	left: 0px;
+	z-index: 999;
 
 	background: rgba(17, 17, 17, .7);
 
@@ -99,15 +100,17 @@ a {
 	width:50%;
 }
 
+/*======== first section ========*/
+
 .first-page {
 	width: 100vw;
 	height: 100vh;
 
-	/*background: url(../img/intro-bg.gif) no-repeat center center fixed;
+	background: url(../img/intro-bg.jpg) no-repeat center center fixed;
 	-webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;*/
+    background-size: cover;
 
 	display: flex;
 	flex-direction: column;
@@ -142,12 +145,22 @@ a {
 	padding-bottom: .3rem;
 }
 
+.countdown {
+	margin: .5rem;
+	padding: .5rem 1rem;
+	text-align: center;
+	width: 25%;
+	background: rgba(17, 17, 17, .5);
+
+}
+
 .countdown p{
-	padding: 1rem;
 	font-size: 2rem;
 	font-weight: 600;
-	color: #1BE215;
+	color: #28df28;
 }
+
+/*======== second section ========*/
 
 .second-page {
 	margin-top: 1rem;
@@ -157,6 +170,25 @@ a {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	
+	position: relative;
+	z-index: 1;
+}
+
+.second-page::before {
+	overflow: hidden;
+	width: 100%;
+	content: "";
+	height: 100%;
+	position: absolute;
+	top: -7%;
+	-webkit-transform: skewY(-2deg);
+    -moz-transform: skewY(-2deg);
+    -ms-transform: skewY(-2deg);
+    -o-transform: skewY(-2deg);
+    transform: skewY(-2deg);
+    z-index: -1;
+    background: #111111;
 }
 
 .container {
@@ -204,6 +236,8 @@ iframe {
     height: 100%;
 }
 
+/*======== third section ========*/
+
 .third-page {
 
 	width: 100vw;
@@ -235,8 +269,13 @@ iframe {
 
 }
 
-.box:hover .tagline {
+.box:hover .tagline , element.hover_effect {
 	opacity: 1;
+}
+
+.hover {
+-webkit-user-select: none;
+-webkit-touch-callout: none;        
 }
 
 .clan-description .clan{
@@ -280,6 +319,8 @@ p.caption{
 	color: #1BC00B;
 }
 
+/*======== twitter feed ========*/
+
 .feed {
 	display: flex;
 	justify-content: center;
@@ -290,8 +331,10 @@ p.caption{
 }
 
 #twitter-widget-0 { 
-    width: 60% !important; 
+    width: 30% !important; 
 }
+
+/*======== footer ========*/
 
 footer {
 	padding: 1rem;
@@ -351,6 +394,10 @@ footer {
 	div.clan-description{
 		padding-bottom: 2rem;
 	}
+
+	#twitter-widget-0 { 
+    width: 60% !important; 
+}
 }
 
 @media all and (max-width: 600px) {
@@ -381,5 +428,9 @@ footer {
 	div.clan-description{
 		padding-bottom: 2rem;
 	}
+
+	#twitter-widget-0 { 
+    width: 60% !important; 
+}
 
 }
