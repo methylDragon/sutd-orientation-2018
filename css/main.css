@@ -268,7 +268,7 @@ iframe {
 	align-items: center;
 }
 
-.tagline:hover, .tagline.hover_effect{
+.tagline:hover, .tagline:active {
 	opacity: 1;
 }
 
