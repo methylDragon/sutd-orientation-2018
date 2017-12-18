@@ -102,11 +102,11 @@ a {
 	width: 100vw;
 	height: 100vh;
 
-	background: url(../img/intro-bg.gif) no-repeat center center fixed;
+	/*background: url(../img/intro-bg.gif) no-repeat center center fixed;
 	-webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
+    background-size: cover;*/
 
 	display: flex;
 	flex-direction: column;
@@ -126,7 +126,7 @@ a {
 	color: #FFFFFF;
 	margin: 0;
 
-	font-size: 6rem;
+	font-size: 6em;
 	transform: rotate(-2deg);
 
 }
@@ -146,23 +146,6 @@ a {
 	font-size: 2rem;
 	font-weight: 600;
 	color: #1BE215;
-}
-
-div.contain-one {
-	margin-top: -3rem;
-	width: 100%;
-	height: 4rem;
-	overflow-x: hidden;
-	overflow-y: visible;
-}
-
-div.one-point-five-page {
-	position: absolute;
-	width: 110%;
-	height: 10%;
-	transform: rotate(-2deg);
-	background: #111111;
-
 }
 
 .second-page {
@@ -197,6 +180,27 @@ div.one-point-five-page {
 	text-align: center;
 	color: #970001;
 
+}
+
+.video {
+	max-width: 100% !important;
+    width: 100% !important;
+    height: auto !important;
+    margin: 0 auto;
+	text-align: center;
+}
+
+.h_iframe {
+	position: relative;
+	padding-top: 56%;
+}
+
+iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .third-page {
@@ -288,3 +292,59 @@ footer {
 	color: rgb(142,142,147);
 	text-align: center;
 }
+
+
+
+@media all and (max-width: 768px) {
+
+	.header a {
+		font-size: 4rem;
+	}
+
+	.third-page {
+		height: relative !important;
+		flex-direction: column;
+	}
+
+	.clan-description .clan {
+		flex-direction: row;
+	}
+
+	.countdown p{
+	font-size: 1.5rem;
+	}
+
+	div.clan-description{
+		padding-bottom: 3rem;
+	}
+
+}
+
+@media all and (max-width: 414px) {
+
+	body {
+		font-size: 12px;
+	}
+
+	.header a {
+		font-size: 2rem;
+	}
+
+	.nav-item {
+	padding: 0 .25rem;
+	}
+
+	.countdown p{
+	font-size: 1rem;
+	}
+	
+	.third-page {
+		padding-top: 1rem;
+	}
+
+	div.clan-description{
+		padding-bottom: 2rem;
+	}
+
+}
+
