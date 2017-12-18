@@ -149,7 +149,7 @@ a {
 	margin: .5rem;
 	padding: .5rem 1rem;
 	text-align: center;
-	width: 25%;
+	width: 23%;
 	background: rgba(17, 17, 17, .5);
 
 }
@@ -334,6 +334,27 @@ p.caption{
     width: 30% !important; 
 }
 
+/*======== last section ========*/
+
+div.last-section {
+	margin-top: 5%;
+}
+
+.last-section p{
+	font-family: Fugaz One, Arial, sans-serif;
+	font-size: 1.5rem;
+	font-weight: 600;
+	text-transform: uppercase;
+	text-align: center;
+	color: #FFFFFF;
+}
+
+#hm {
+	font-family: Montserrat, Open Sans, Helvetica, sans-serif;
+	color:  #111111;
+	font-size: .5rem;
+}
+
 /*======== footer ========*/
 
 footer {
@@ -359,6 +380,10 @@ footer {
 		flex-direction: row;
 	}
 
+	.countdown {
+		width: 80%;
+	}
+
 	.countdown p{
 	font-size: 1.5rem;
 	}
@@ -381,6 +406,10 @@ footer {
 
 	.nav-item {
 		padding: 0 .25rem;
+	}
+
+	.countdown {
+		width: 45%;
 	}
 
 	
@@ -414,6 +443,10 @@ footer {
 		padding: 0 .25rem;
 	}
 
+	.countdown {
+		width: 35%;
+	}
+
 	.countdown p{
 		font-size: 1rem;
 	}
@@ -430,7 +463,9 @@ footer {
 	}
 
 	#twitter-widget-0 { 
-    width: 60% !important; 
-}
+    	width: 60% !important; 
+	}
+
+
 
 }
