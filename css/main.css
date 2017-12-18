@@ -107,10 +107,10 @@ a {
 	height: 100vh;
 
 	background: url(../img/intro-bg.jpg) no-repeat center center fixed;
-	-webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+	-webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
 
 	display: flex;
 	flex-direction: column;
@@ -268,7 +268,7 @@ iframe {
 	align-items: center;
 }
 
-.tagline:hover, .tagline:active {
+.tagline:hover {
 	opacity: 1;
 }
 
