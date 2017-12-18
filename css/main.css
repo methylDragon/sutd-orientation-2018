@@ -289,6 +289,10 @@ p.caption{
 	padding: 0;
 }
 
+#twitter-widget-0 { 
+    width: 60% !important; 
+}
+
 footer {
 	padding: 1rem;
 	font-size: .8rem;
