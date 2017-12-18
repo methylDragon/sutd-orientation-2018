@@ -1,5 +1,60 @@
 @import url('https://fonts.googleapis.com/css?family=Fugaz+One|Montserrat:400,600');
 
+
+@media all and (max-width: 768px) {
+
+	.header a {
+		font-size: 4rem;
+	}
+
+	.third-page {
+		height: auto;
+		flex-direction: column;
+	}
+
+	.clan-description .clan {
+		flex-direction: row;
+	}
+
+	.countdown p{
+	font-size: 1.5rem;
+	}
+
+	div.clan-description{
+		padding-bottom: 3rem;
+	}
+
+}
+
+@media all and (max-width: 414px) {
+
+	body {
+		font-size: 12px;
+	}
+
+	.header a {
+		font-size: 2rem;
+	}
+
+	.nav-item {
+		padding: 0 .25rem;
+	}
+
+	.countdown p{
+		font-size: 1rem;
+	}
+	
+	.third-page {
+		padding-top: 1rem;
+		height: auto;
+	}
+
+	div.clan-description{
+		padding-bottom: 2rem;
+	}
+
+}
+
 html, body{
 
 	font-size: 16px;
@@ -291,60 +346,5 @@ footer {
 	font-size: .8rem;
 	color: rgb(142,142,147);
 	text-align: center;
-}
-
-
-
-@media all and (max-width: 768px) {
-
-	.header a {
-		font-size: 4rem;
-	}
-
-	.third-page {
-		height: relative !important;
-		flex-direction: column;
-	}
-
-	.clan-description .clan {
-		flex-direction: row;
-	}
-
-	.countdown p{
-	font-size: 1.5rem;
-	}
-
-	div.clan-description{
-		padding-bottom: 3rem;
-	}
-
-}
-
-@media all and (max-width: 414px) {
-
-	body {
-		font-size: 12px;
-	}
-
-	.header a {
-		font-size: 2rem;
-	}
-
-	.nav-item {
-	padding: 0 .25rem;
-	}
-
-	.countdown p{
-	font-size: 1rem;
-	}
-	
-	.third-page {
-		padding-top: 1rem;
-	}
-
-	div.clan-description{
-		padding-bottom: 2rem;
-	}
-
 }
 
