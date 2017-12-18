@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Fugaz+One|Montserrat:400,600');
 
+html{
+	height:100%;
+	width:100%;
+}
+
 html, body{
 
 	font-size: 16px;
@@ -107,10 +112,10 @@ a {
 	height: 100vh;
 
 	background: url(../img/intro-bg.jpg) no-repeat center center fixed;
-	-webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 100%;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 
 	display: flex;
 	flex-direction: column;
@@ -363,7 +368,7 @@ footer {
 	text-align: center;
 }
 
-@media all and (min-width: 860){
+@media all and (min-width: 860px){
 
 	.header a {
 		font-size: 4rem;
@@ -443,7 +448,7 @@ footer {
 	}
 
 	.countdown {
-		width: 40%;
+		width: 45%;
 	}
 
 	.countdown p{
