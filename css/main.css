@@ -8,8 +8,9 @@
 	}
 
 	.third-page {
-		height: auto;
+		height: auto !important;
 		flex-direction: column;
+		overflow: auto;
 	}
 
 	.clan-description .clan {
@@ -46,7 +47,8 @@
 	
 	.third-page {
 		padding-top: 1rem;
-		height: auto;
+		height: auto !important;
+		overflow: auto;
 	}
 
 	div.clan-description{
