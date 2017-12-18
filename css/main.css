@@ -269,7 +269,7 @@ iframe {
 
 }
 
-.box:hover .tagline , element.hover_effect {
+.box:hover .tagline, .hover_effect, .box:active .tagline {
 	opacity: 1;
 }
 
