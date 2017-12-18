@@ -1,62 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Fugaz+One|Montserrat:400,600');
 
-
-@media all and (max-width: 768px) {
-
-	.header a {
-		font-size: 4rem;
-	}
-
-	.third-page {
-		height: auto !important;
-		flex-direction: column;
-		overflow: auto;
-	}
-
-	.clan-description .clan {
-		flex-direction: row;
-	}
-
-	.countdown p{
-	font-size: 1.5rem;
-	}
-
-	div.clan-description{
-		padding-bottom: 3rem;
-	}
-
-}
-
-@media all and (max-width: 414px) {
-
-	body {
-		font-size: 12px;
-	}
-
-	.header a {
-		font-size: 2rem;
-	}
-
-	.nav-item {
-		padding: 0 .25rem;
-	}
-
-	.countdown p{
-		font-size: 1rem;
-	}
-	
-	.third-page {
-		padding-top: 1rem;
-		height: auto !important;
-		overflow: auto;
-	}
-
-	div.clan-description{
-		padding-bottom: 2rem;
-	}
-
-}
-
 html, body{
 
 	font-size: 16px;
@@ -75,7 +18,8 @@ h1, h4 {
 
 .logo img {
 	max-height: 25px;
-	max-width: 100%;
+	min-height: 12px;
+	height: 100%;
 }
 
 p, a {
@@ -350,3 +294,86 @@ footer {
 	text-align: center;
 }
 
+@media all and (min-width: 860){
+
+	.header a {
+		font-size: 4rem;
+	}
+
+	.third-page {
+		height: auto !important;
+		flex-direction: column;
+		overflow: auto;
+	}
+
+	.clan-description .clan {
+		flex-direction: row;
+	}
+
+	.countdown p{
+	font-size: 1.5rem;
+	}
+
+	div.clan-description{
+		padding-bottom: 3rem;
+	}
+
+}
+
+@media all and (max-width: 860px) and (min-width: 600px){
+
+	body {
+		font-size: 14px;
+	}
+
+	.header a {
+		font-size: 3.5rem;
+	}
+
+	.nav-item {
+		padding: 0 .25rem;
+	}
+
+	
+	.third-page {
+		padding-top: 1rem;
+		flex-direction: column;
+		height: auto !important;
+		overflow: auto;
+	}
+
+	div.clan-description{
+		padding-bottom: 2rem;
+	}
+}
+
+@media all and (max-width: 600px) {
+
+	body {
+		font-size: 12px;
+	}
+
+	.header a {
+		font-size: 2rem;
+	}
+
+	.nav-item {
+		padding: 0 .25rem;
+	}
+
+	.countdown p{
+		font-size: 1rem;
+	}
+	
+	.third-page {
+		padding-top: 1rem;
+		flex-direction: column;
+		height: auto !important;
+		overflow: auto;
+	}
+
+	div.clan-description{
+		padding-bottom: 2rem;
+	}
+
+}
