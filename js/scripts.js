@@ -6,7 +6,7 @@ var nav = $('.nav-bar');
 
 $window.on('scroll', function() {
     var scrollTop = $window.scrollTop();
-    nav.toggleClass('hidden', scrollTop > prev);
+    nav.toggleClass('hidden', ((scrollTop > prev) && (scrollTop > 150)));
     prev = scrollTop;
 });
 
@@ -17,7 +17,7 @@ $window.on('scroll', function() {
 var countDownDate = new Date("May 9, 2018 00:00:00").getTime();
 
 
-var x = setInterval(function() {
+  var x = setInterval(function() {
 	var now = new Date().getTime();
 	var distance = countDownDate - now;
 

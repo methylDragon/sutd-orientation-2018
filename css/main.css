@@ -368,7 +368,7 @@ footer {
 	text-align: center;
 }
 
-@media all and (min-width: 860px){
+@media all and (max-width: 860px){
 
 	.header a {
 		font-size: 4rem;
