@@ -1,14 +1,14 @@
 // Magic Menu ----
 
-var prev = 0;
-var $window = $(window);
-var nav = $('.nav-bar');
+// var prev = 0;
+// var $window = $(window);
+// var nav = $('.nav-bar');
 
-$window.on('scroll', function() {
-    var scrollTop = $window.scrollTop();
-    nav.toggleClass('hidden', ((scrollTop > prev) && (scrollTop > 150)));
-    prev = scrollTop;
-});
+// $window.on('scroll', function() {
+//     var scrollTop = $window.scrollTop();
+//     nav.toggleClass('hidden', ((scrollTop > prev) && (scrollTop > 150)));
+//     prev = scrollTop;
+// });
 
 // ---- //
 
@@ -95,7 +95,7 @@ class TextScramble {
 
 const phrases = [
   'WELCOME TO',
-  'NUCLEAR THRONE'
+  'DUST TILL DAWN'
 ]
 
 const el = document.querySelector('.title')

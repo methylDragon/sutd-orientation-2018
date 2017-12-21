@@ -1,18 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Fugaz+One|Montserrat:400,600');
 
-html{
-	height:100%;
-	width:100%;
-}
-
 html, body{
+
+	width: 100%;
+	height: 100%;
 
 	font-size: 16px;
 
 	margin: 0;
 	padding: 0;
 
-	background: #111111;
+	background: #16080B;
 }
 
 h1, h4 {
@@ -108,14 +106,14 @@ a {
 /*======== first section ========*/
 
 .first-page {
-	width: 100vw;
+	width: 100%;
 	height: 100vh;
 
-	background: url(../img/intro-bg.jpg) no-repeat center center fixed;
+	/*background: url(../img/intro-bg.jpg) no-repeat center center fixed;
 	-webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
+    background-size: cover;*/
 
 	display: flex;
 	flex-direction: column;
@@ -123,16 +121,39 @@ a {
 	align-items: center;
 }
 
+#myCanvas {
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(#16080B, #34131A5c 10%, #5c162b 70%, #efaa1f);
+        z-index: 1;
+        /*background: linear-gradient(#e4e0ba, #f7d9aa);*/
+    }
+
+canvas {
+	width: 100%;
+    height: 100vh;
+}
+
 .header {
+
+
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	z-index: 2;
 }
 
 .header a {
 	font-family: Fugaz One, Arial, sans-serif;
-	color: #FFFFFF;
+	color: #efaa1f;
 	margin: 0;
 
 	font-size: 6em;
@@ -148,6 +169,7 @@ a {
 .subtitle p {
 	text-align: center;
 	padding-bottom: .3rem;
+	z-index: 2;
 }
 
 .countdown {
@@ -155,21 +177,55 @@ a {
 	padding: .5rem 1rem;
 	text-align: center;
 	width: 23%;
-	background: rgba(17, 17, 17, .5);
-
+	/*background: rgba(17, 17, 17, .5);*/
+	z-index: 2;
 }
 
 .countdown p{
 	font-size: 2rem;
 	font-weight: 600;
-	color: #28df28;
+	color: #efaa1f;
 }
+
+/*======== parallax ========*/
+
+.parallax {
+
+	background: linear-gradient(#34131A 55%, #39B54A 90%);
+	background-attachment: fixed;
+}
+
+.parallax_layer {
+	position: absolute;
+	right: 0;
+	top: 0;
+	left: 0;
+}
+
+.parallax_group {
+  position: relative;
+  height: 100vh;
+  transform-style: preserve-3d;
+}
+
+.parallax_layer-back {
+	transform: translateZ(-1px) scale(1.4);
+}
+
+.parallax_layer-mid {
+	transform: translateZ(-.5px) scale(1.2);
+}
+
+.parallax_layer-front {
+	transform: translateZ(0);
+}
+
 
 /*======== second section ========*/
 
 .second-page {
 	margin-top: 1rem;
-	width: 100vw;
+	width: 100%;
 	height: 100vh;
 
 	display: flex;
@@ -178,6 +234,7 @@ a {
 	
 	position: relative;
 	z-index: 1;
+
 }
 
 .second-page::before {
@@ -193,7 +250,7 @@ a {
     -o-transform: skewY(-2deg);
     transform: skewY(-2deg);
     z-index: -1;
-    background: #111111;
+    background: #16080B;
 }
 
 .container {
@@ -243,15 +300,17 @@ iframe {
 
 /*======== third section ========*/
 
-.third-page {
+div.third-page {
 
-	width: 100vw;
+	width: 100%;
 	height: 100vh;
 
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
+
+	background: #16080B;
 }
 
 .box img {
@@ -341,6 +400,7 @@ p.caption{
 /*======== last section ========*/
 
 div.last-section {
+	background: #16080B;
 	margin-top: 5%;
 }
 
