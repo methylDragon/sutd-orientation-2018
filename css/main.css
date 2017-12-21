@@ -139,6 +139,8 @@ a {
 canvas {
 	width: 100%;
     height: 100vh;
+
+    display: block;
 }
 
 .header {
@@ -176,7 +178,6 @@ canvas {
 	margin: .5rem;
 	padding: .5rem 1rem;
 	text-align: center;
-	width: 23%;
 	/*background: rgba(17, 17, 17, .5);*/
 	z-index: 2;
 }
@@ -186,40 +187,6 @@ canvas {
 	font-weight: 600;
 	color: #efaa1f;
 }
-
-/*======== parallax ========*/
-
-.parallax {
-
-	background: linear-gradient(#34131A 55%, #39B54A 90%);
-	background-attachment: fixed;
-}
-
-.parallax_layer {
-	position: absolute;
-	right: 0;
-	top: 0;
-	left: 0;
-}
-
-.parallax_group {
-  position: relative;
-  height: 100vh;
-  transform-style: preserve-3d;
-}
-
-.parallax_layer-back {
-	transform: translateZ(-1px) scale(1.4);
-}
-
-.parallax_layer-mid {
-	transform: translateZ(-.5px) scale(1.2);
-}
-
-.parallax_layer-front {
-	transform: translateZ(0);
-}
-
 
 /*======== second section ========*/
 

@@ -73,8 +73,8 @@ function createScene() {
 }
 
 function handleWindowResize() {
-    HEIGHT = window.innerHeight;
-    WIDTH = window.innerWidth;
+    HEIGHT = window.document.documentElement.clientHeight;
+    WIDTH = window.document.documentElement.clientWidth;
     renderer.setSize(WIDTH, HEIGHT);
     renderer.setPixelRatio(window.devicePixelRatio);
     renderer.shadowMap.enabled = true;
