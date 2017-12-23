@@ -8,9 +8,9 @@ function resetSite() {
         ogX: 0,
         ogY: 0,
         ogZ: 0,
-        sceneX: .2,
+        sceneX: .8,
         sceneY: -0.5,
-        sceneZ: -3.5,
+        sceneZ: -15,
     }
 }
 
@@ -29,7 +29,7 @@ function init(event) {
 
 }
 
-var scene, camera, fieldOfView, aspectRatio, nearPlane, farPlane, HEIGHT, WIDTH, renderer, container, ogX, ogY, ogZ;
+var scene, camera, fieldOfView, aspectRatio, nearPlane, farPlane, HEIGHT, WIDTH, renderer, container, ogX, ogY, ogZ, controls;
 
 function createScene() {
     HEIGHT = window.document.documentElement.clientHeight;
@@ -48,6 +48,9 @@ function createScene() {
         nearPlane,
         farPlane
     );
+
+    controls = new THREE.DeviceOrientationControls( camera );
+
 
     camera.rotation.order = 'YXZ';
     camera.position.x = site.ogX;
@@ -87,7 +90,7 @@ var hemisphereLight, shadowLight;
 function createLights() {
     hemisphereLight = new THREE.HemisphereLight(0xffffff, 0x962132, .7);
     shadowLight = new THREE.SpotLight(0xffffff, 4);
-    shadowLight.position.set(0, 100, -5);
+    shadowLight.position.set(0, 20, 5);
     shadowLight.castShadow = true;
 
     shadowLight.shadow.camera.left = -50;
@@ -117,6 +120,7 @@ function createDesert() {
             desert = new THREE.Mesh(geometry, material);
             desert.rotation.set(0, -Math.PI / 2, 0);
             desert.position.set(site.sceneX, site.sceneY, site.sceneZ);
+            desert.scale.set(5,5,5);
             desert.traverse(function(node) {
                 if (node instanceof THREE.Mesh) {
                     node.castShadow = true;
@@ -156,9 +160,12 @@ function normalize(v, vmin, vmax, tmin, tmax) {
 }
 
 function loop(time) {
+
     renderer.render(scene, camera);
 
     updatePlane();
+
+    controls.update();
 
     requestAnimationFrame(loop);
 };

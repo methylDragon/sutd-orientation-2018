@@ -377,13 +377,14 @@ div.last-section {
 	font-weight: 600;
 	text-transform: uppercase;
 	text-align: center;
-	color: #FFFFFF;
+	color: #EFAA1F;
 }
 
 #hm {
 	font-family: Montserrat, Open Sans, Helvetica, sans-serif;
-	color:  #111111;
-	font-size: .5rem;
+	font-weight: 400;
+	color:  rgba(255,255,255, .5);
+	font-size: .4rem;
 }
 
 /*======== footer ========*/
