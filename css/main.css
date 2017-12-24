@@ -39,13 +39,14 @@ p, a {
 	left: 0px;
 	z-index: 999;
 
-	background: rgba(17, 17, 17, .7);
+	background: rgba(22,8,11, .7);
 
 	-webkit-transition: -webkit-transform 1s cubic-bezier(0.86, 0, 0.07, 1);
   	-moz-transition: -moz-transform 1s cubic-bezier(0.86, 0, 0.07, 1);
   	transition: transform 1s cubic-bezier(0.86, 0, 0.07, 1);
 
-	padding: 1rem;
+	padding: .5rem 1rem .3rem 1rem;
+	padding-bottom: .3rem;
 
 	display: flex;
 	justify-content: space-between;
@@ -109,38 +110,16 @@ a {
 	width: 100%;
 	height: 100vh;
 
-	/*background: url(../img/intro-bg.jpg) no-repeat center center fixed;
+	background: url(../img/intro-bg-r.jpg) no-repeat center center fixed;
 	-webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;*/
+    background-size: cover;
 
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-}
-
-#myCanvas {
-        position: absolute;
-        width: 100%;
-        height: 100vh;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        margin: 0;
-        padding: 0;
-        background: linear-gradient(#16080B, #34131A5c 10%, #5c162b 70%, #efaa1f);
-        z-index: 1;
-        /*background: linear-gradient(#e4e0ba, #f7d9aa);*/
-    }
-
-canvas {
-	width: 100%;
-    height: 100vh;
-
-    display: block;
 }
 
 .header {
@@ -155,7 +134,7 @@ canvas {
 
 .header a {
 	font-family: Fugaz One, Arial, sans-serif;
-	color: #efaa1f;
+	color: #EFAA1F;
 	margin: 0;
 
 	font-size: 6em;
@@ -194,6 +173,7 @@ canvas {
 	margin-top: 1rem;
 	width: 100%;
 	height: 100vh;
+	min-height: 500px;
 
 	display: flex;
 	justify-content: center;
@@ -271,10 +251,11 @@ div.third-page {
 
 	width: 100%;
 	height: 100vh;
+	min-height: 500px;
 
 	display: flex;
 	justify-content: center;
-	align-items: center;
+	align-items: flex-start;
 	text-align: center;
 
 	background: #16080B;
@@ -321,8 +302,10 @@ div.third-page {
  }
 
 .clan-description h4 {
-	font-size: 3rem;
+	font-size: 2.5rem;
 	text-align: center;
+	text-transform: uppercase;
+
 }
 
 p.caption{
@@ -369,6 +352,7 @@ p.caption{
 div.last-section {
 	background: #16080B;
 	margin-top: 5%;
+	min-height: 50px;
 }
 
 .last-section p{
