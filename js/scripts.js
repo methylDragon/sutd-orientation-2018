@@ -1,14 +1,14 @@
 // Magic Menu ----
 
-// var prev = 0;
-// var $window = $(window);
-// var nav = $('.nav-bar');
+var prev = 0;
+var $window = $(window);
+var nav = $('.nav-bar');
 
-// $window.on('scroll', function() {
-//     var scrollTop = $window.scrollTop();
-//     nav.toggleClass('hidden', ((scrollTop > prev) && (scrollTop > 150)));
-//     prev = scrollTop;
-// });
+$window.on('scroll', function() {
+    var scrollTop = $window.scrollTop();
+    nav.toggleClass('hidden', ((scrollTop > prev) && (scrollTop > 150)));
+    prev = scrollTop;
+});
 
 // ---- //
 
@@ -42,7 +42,7 @@ var countDownDate = new Date("May 9, 2018 00:00:00").getTime();
 class TextScramble {
   constructor(el) {
     this.el = el
-    this.chars = '!<>-\\/[]{}—@$=+*^?#'
+    this.chars = '▓█ΔΠΦ!@#$%\^*▓{}[]'
     this.update = this.update.bind(this)
   }
   setText(newText) {

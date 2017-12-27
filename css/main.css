@@ -110,7 +110,7 @@ a {
 	width: 100%;
 	height: 100vh;
 
-	background: url(../img/intro-bg-r.jpg) no-repeat center center fixed;
+	background: url(../img/intro-bg-r.jpg) no-repeat center fixed;
 	-webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -186,7 +186,7 @@ a {
 
 .second-page::before {
 	overflow: hidden;
-	width: 100%;
+	width: 100vw;
 	content: "";
 	height: 100%;
 	position: absolute;
@@ -258,7 +258,11 @@ div.third-page {
 	align-items: flex-start;
 	text-align: center;
 
-	background: #16080B;
+	background: url(../img/flame-r.gif) no-repeat center scroll;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .box img {
@@ -274,7 +278,7 @@ div.third-page {
     left: 0; top: 0; right: 0; bottom: 0;
 	opacity: 0;
 	transition: .5s ease;
-	background: rgba(17, 17, 17, .7);
+	background: rgba(22,8,11, .7);
 	display: flex;
 	justify-content: center;
 	align-items: center;
