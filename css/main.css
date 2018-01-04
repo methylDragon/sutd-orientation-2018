@@ -114,6 +114,17 @@ a {
     user-select: none;
 }
 
+.hidden .relic {
+    position: relative;
+    top: 0px;
+	color: #ffcc66;
+    background: black;
+    padding: 4px;
+    left: 0;
+    white-space: nowrap;
+}
+
+
 .first-page {
 	width: 100%;
 	height: 100vh;
