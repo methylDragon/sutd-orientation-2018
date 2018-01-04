@@ -186,7 +186,7 @@ a {
 
 .second-page::before {
 	overflow: hidden;
-	width: 100vw;
+	width: 100%;
 	content: "";
 	height: 100%;
 	position: absolute;
