@@ -12,7 +12,7 @@
     <script src="https://code.jquery.com/mobile/1.5.0-alpha.1/jquery.mobile-1.5.0-alpha.1.min.js"></script>
 </head>
 
-<body>
+<body onload="paint()">
     <div class="line-container">
         <div class="bg-lines"></div>
         <div class="video-container">
@@ -108,6 +108,12 @@
         </div>
     </div>
 
+	<div class="twitter-section">
+		<h1 style="font-size:3rem;">TRANSMISSIONS</h1>
+		<p class="twitter">#DustTillDawn | #SUTDorientation | #SUTD2018</br></br></p>
+		<a class="twitter-timeline" data-link-color="#EFAA1F" href="https://twitter.com/search?q=%23DustTillDawn%20OR%20%23SUTDorientation%20OR%20%23SUTD2018" data-widget-id="949327415834132480" data-chrome="nofooter noheader" data-tweet-limit="20" width="75%">Tweets about #DustTillDawn OR #SUTDorientation OR #SUTD2018</a>
+	</div>
+	
     <div class="last-section">
         <p>YOUR JOURNEY BEGINS</p>
         <p id="hm">A <b>SHIFT</b> in perspective will point you in the right direction</p>
@@ -125,6 +131,7 @@
         </div>
     </div>
 
+	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
     <script src="js/scripts.js"></script>
 </body>
 

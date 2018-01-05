@@ -409,6 +409,7 @@ div.last-section {
 	background: #16080B;
 	margin-top: 5%;
 	min-height: 50px;
+	text-align: center;
 }
 
 .last-section p{
@@ -425,6 +426,34 @@ div.last-section {
 	font-weight: 400;
 	color:  rgba(255,255,255, .5);
 	font-size: .4rem;
+}
+
+
+/*======== twitter ========*/
+
+div.twitter-section {
+	background: #16080B;
+	margin-top: 5%;
+	min-height: 50px;
+	text-align: center;
+}
+
+.twitter-section p{
+	text-align: center;	
+	font-family: Montserrat, Open Sans, Helvetica, sans-serif;
+	color:#FFFFFF;
+	margin: 0;
+	font-size:1rem;
+	text-transform:capitalize;
+}
+
+.twitter-section h1{
+	font-family: Fugaz One, Arial, sans-serif;
+	font-size: 1.5rem;
+	font-weight: 600;
+	text-transform: uppercase;
+	text-align: center;
+	color: #EFAA1F;
 }
 
 /*======== footer ========*/

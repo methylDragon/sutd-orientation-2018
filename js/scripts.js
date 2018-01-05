@@ -163,3 +163,24 @@ function mouseoutHandler( event ){
 
 $.mobile.loading().hide();
 // ---- //
+
+// TWITTER widget edit ---- //
+// Source: https://codepen.io/mythicalpizza/pen/NqjbEe //
+var widgetCSS = "" +
+	"body{font-family: Montserrat, Open Sans, Helvetica, sans-serif;}" +
+	"img.Avatar{display: none;}" +
+	".twitter-profile-body{background: transparent; box-shadow: none;}" +
+    ".timeline-Header{background-color:; border-top-left-radius: 10px; border-top-right-radius: 10px;}" +
+	".timeline-Tweet-brand{display: none;}" +
+    ".timeline-Header-title{color: #EFAA1F;}" +
+    ".timeline-Tweet-text{color: white;}" + 
+	".timeline-Widget{background-color: #16080B}";
+
+function paint(){
+  var w = document.getElementById("twitter-widget-0").contentDocument;
+  
+  var s = document.createElement("style");
+  s.innerHTML = widgetCSS;
+  s.type = "text/css";
+  w.head.appendChild(s);
+}
