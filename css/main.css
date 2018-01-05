@@ -13,6 +13,10 @@ html, body{
 	background: #16080B;
 }
 
+body {
+	position: relative;
+}
+
 h1, h4 {
 	font-family: Fugaz One, Arial, sans-serif;
 	color: #FFFFFF;
@@ -30,6 +34,61 @@ p, a {
 	color: #FFFFFF;
 	margin: 0;
 
+}
+
+.line-container {
+	pointer-events: none;
+	position: relative;
+}
+
+.bg-lines {
+	width: 100%;
+	height: 100%;
+	z-index: 99;
+
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+
+    background-image: linear-gradient(rgba(0,0,0,0) 87.5%, rgba(61, 21, 29,.1) 87.5%);
+    background-size: .25rem .25rem;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+}
+
+.video-container {
+	overflow: hidden;
+}
+
+@-webkit-keyframes up {
+    from { -webkit-transform: translateY(100%); }
+    to { -webkit-transform: translateY(-100%); }
+}
+
+@keyframes up {
+    from { transform: translateY(100%); }
+    to { transform: translateY(-100%); }
+}
+
+.bg-video-lines {
+	width: 100%;
+	height: 100%;
+	z-index: 99;
+
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+    background-image: linear-gradient(rgba(0,0,0,0) 98%, rgba(22,8,11,.1) 99%, rgba(0,0,0,0) 100%);
+    background-size: 64rem 32rem;
+    background-repeat: repeat;
+    -webkit-animation: up 16.666s linear infinite;
+    animation: up 16.666s linear infinite;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
 }
 
 .nav-bar {
@@ -83,7 +142,7 @@ a {
 	bottom: 0;
 	height: 1px;
 	width: 0%;
-	background-color: #FFFFFF;
+	background-color: #EFAA1F;
 	-webkit-transition: width 0.5s ease-in-out;
 	transition: width 0.5s ease-in-out;
 }
@@ -95,7 +154,7 @@ a {
   	bottom: 0;
   	height: 1px;
   	width: 0%;
-  	background-color: #FFFFFF;
+  	background-color: #EFAA1F;
   	-webkit-transition: width 0.5s ease-in-out;
   	transition: width 0.5s ease-in-out;
 }
@@ -113,17 +172,6 @@ a {
     -ms-user-select: none;
     user-select: none;
 }
-
-.hidden .relic {
-    position: relative;
-    top: 0px;
-	color: #ffcc66;
-    background: black;
-    padding: 4px;
-    left: 0;
-    white-space: nowrap;
-}
-
 
 .first-page {
 	width: 100%;
@@ -205,7 +253,7 @@ a {
 
 .second-page::before {
 	overflow: hidden;
-	width: 100vw;
+	width: 100%;
 	content: "";
 	height: 100%;
 	position: absolute;
@@ -355,21 +403,6 @@ p.caption{
 	color: #1BC00B;
 }
 
-/*======== twitter feed ========*/
-
-.feed {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 100%;
-	margin: 0;
-	padding: 0;
-}
-
-#twitter-widget-0 { 
-    width: 30% !important; 
-}
-
 /*======== last section ========*/
 
 div.last-section {
@@ -402,6 +435,25 @@ footer {
 	color: rgb(142,142,147);
 	text-align: center;
 }
+
+/*======== relic ========*/
+
+.relic {
+	position: absolute;
+	top: 20%;
+	z-index: 99;
+}
+
+.relic p {
+	font-family: Montserrat, Open Sans, Helvetica, sans-serif;
+	font-size: 1rem;
+	color: #efaa1f;
+	background: rgba(22,8,11, .7);
+
+	padding: .5rem;
+}
+
+/*======== media selectors ========*/
 
 @media all and (max-width: 860px){
 
@@ -463,9 +515,6 @@ footer {
 		padding-bottom: 2rem;
 	}
 
-	#twitter-widget-0 { 
-    width: 60% !important; 
-}
 }
 
 @media all and (max-width: 600px) {
@@ -499,10 +548,6 @@ footer {
 
 	div.clan-description{
 		padding-bottom: 2rem;
-	}
-
-	#twitter-widget-0 { 
-    	width: 60% !important; 
 	}
 
 
