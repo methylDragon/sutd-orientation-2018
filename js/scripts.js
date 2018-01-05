@@ -98,7 +98,7 @@ const phrases = [
   'DUST TILL DAWN'
 ]
 
-const el = document.querySelector('.title')
+const el = document.querySelector('.main-title')
 const fx = new TextScramble(el)
 
 let counter = 0
@@ -142,3 +142,24 @@ $( "#blog" ).click(function() {
 });
 // ---- //
 
+// taphold relic hint display ---- //
+$(".hidden").on({taphold: tapholdHandler, mouseout: mouseoutHandler});  
+
+function tapholdHandler( event ){
+	var $relic = $(document).find(".relic");
+  	if (!$relic.length) {
+    	$(this).before('<div class="relic"><p>' + $(this).attr("relic") + '</p></div>');
+      } else {
+          $relic.remove();
+      }
+}
+
+function mouseoutHandler( event ){
+	var $relic = $(document).find(".relic");
+  if ($relic.length){
+  	$relic.remove();
+  }
+}
+
+$.mobile.loading().hide();
+// ---- //
