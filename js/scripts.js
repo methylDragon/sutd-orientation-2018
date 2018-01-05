@@ -146,19 +146,20 @@ $( "#blog" ).click(function() {
 $(".hidden").on({taphold: tapholdHandler, mouseout: mouseoutHandler});  
 
 function tapholdHandler( event ){
-	var $relic = $(this).find(".relic");
+	var $relic = $(document).find(".relic");
   	if (!$relic.length) {
-    	$(this).prepend('<span class="relic">' + $(this).attr("relic") + '</span>');
+    	$(this).before('<div class="relic"><p>' + $(this).attr("relic") + '</p></div>');
       } else {
           $relic.remove();
       }
 }
 
 function mouseoutHandler( event ){
-	var $relic = $(this).find(".relic");
+	var $relic = $(document).find(".relic");
   if ($relic.length){
   	$relic.remove();
   }
 }
 
-$.mobile.loadingMessage = false;
+$.mobile.loading().hide();
+// ---- //

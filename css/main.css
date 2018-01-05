@@ -114,17 +114,6 @@ a {
     user-select: none;
 }
 
-.hidden .relic {
-    position: relative;
-    top: 0px;
-	color: #ffcc66;
-    background: black;
-    padding: 4px;
-    left: 0;
-    white-space: nowrap;
-}
-
-
 .first-page {
 	width: 100%;
 	height: 100vh;
@@ -205,7 +194,7 @@ a {
 
 .second-page::before {
 	overflow: hidden;
-	width: 100vw;
+	width: 100%;
 	content: "";
 	height: 100%;
 	position: absolute;
@@ -355,21 +344,6 @@ p.caption{
 	color: #1BC00B;
 }
 
-/*======== twitter feed ========*/
-
-.feed {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 100%;
-	margin: 0;
-	padding: 0;
-}
-
-#twitter-widget-0 { 
-    width: 30% !important; 
-}
-
 /*======== last section ========*/
 
 div.last-section {
@@ -402,6 +376,25 @@ footer {
 	color: rgb(142,142,147);
 	text-align: center;
 }
+
+/*======== relic ========*/
+
+.relic {
+	position: absolute;
+	top: 20%;
+	z-index: 99;
+}
+
+.relic p {
+	font-family: Montserrat, Open Sans, Helvetica, sans-serif;
+	font-size: 1rem;
+	color: #efaa1f;
+	background: rgba(22,8,11, .7);
+
+	padding: .5rem;
+}
+
+/*======== media selectors ========*/
 
 @media all and (max-width: 860px){
 
@@ -463,9 +456,6 @@ footer {
 		padding-bottom: 2rem;
 	}
 
-	#twitter-widget-0 { 
-    width: 60% !important; 
-}
 }
 
 @media all and (max-width: 600px) {
@@ -499,10 +489,6 @@ footer {
 
 	div.clan-description{
 		padding-bottom: 2rem;
-	}
-
-	#twitter-widget-0 { 
-    	width: 60% !important; 
 	}
 
 
